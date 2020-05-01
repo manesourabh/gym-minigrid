@@ -244,6 +244,34 @@ class MultiRoomEnvN2S4(MultiRoomEnv):
             maxRoomSize=4
         )
 
+
+class MultiRoomEnvN2S8(MultiRoomEnv):
+    def __init__(self):
+        super().__init__(
+            minNumRooms=2,
+            maxNumRooms=2,
+            maxRoomSize=8
+        )
+
+
+class MultiRoomEnvN2S10(MultiRoomEnv):
+    def __init__(self):
+        super().__init__(
+            minNumRooms=2,
+            maxNumRooms=2,
+            maxRoomSize=10
+        )
+
+
+class MultiRoomEnvN3S8(MultiRoomEnv):
+    def __init__(self):
+        super().__init__(
+            minNumRooms=3,
+            maxNumRooms=3,
+            maxRoomSize=8
+        )
+
+
 class MultiRoomEnvN4S5(MultiRoomEnv):
     def __init__(self):
         super().__init__(
@@ -259,9 +287,52 @@ class MultiRoomEnvN6(MultiRoomEnv):
             maxNumRooms=6
         )
 
+
+class MultiRoomEnvN4S8(MultiRoomEnv):
+    def __init__(self):
+        super().__init__(
+            minNumRooms=4,
+            maxNumRooms=4,
+            maxRoomSize=8
+        )
+
+
+class MultiRoomEnvN4(MultiRoomEnv):
+    def __init__(self):
+        super().__init__(
+            minNumRooms=4,
+            maxNumRooms=4,
+            maxRoomSize=10
+        )
+
+
+class MultiRoomEnvN8(MultiRoomEnv):
+    def __init__(self):
+        super().__init__(
+            minNumRooms=8,
+            maxNumRooms=8,
+            maxRoomSize=10
+        )
+
+
 register(
     id='MiniGrid-MultiRoom-N2-S4-v0',
     entry_point='gym_minigrid.envs:MultiRoomEnvN2S4'
+)
+
+register(
+    id='MiniGrid-MultiRoom-N2-S8-v0',
+    entry_point='gym_minigrid.envs:MultiRoomEnvN2S8'
+)
+
+register(
+    id='MiniGrid-MultiRoom-N2-S10-v0',
+    entry_point='gym_minigrid.envs:MultiRoomEnvN2S10'
+)
+
+register(
+    id='MiniGrid-MultiRoom-N3-S8-v0',
+    entry_point='gym_minigrid.envs:MultiRoomEnvN3S8'
 )
 
 register(
@@ -272,4 +343,17 @@ register(
 register(
     id='MiniGrid-MultiRoom-N6-v0',
     entry_point='gym_minigrid.envs:MultiRoomEnvN6'
+)
+
+register(
+    id='MiniGrid-MultiRoom-N4-S8-v0',
+    entry_point='gym_minigrid.envs:MultiRoomEnvN4S8'
+)
+register(
+    id='MiniGrid-MultiRoom-N4-v0',
+    entry_point='gym_minigrid.envs:MultiRoomEnvN4'
+)
+register(
+    id='MiniGrid-MultiRoom-N8-v0',
+    entry_point='gym_minigrid.envs:MultiRoomEnvN8'
 )

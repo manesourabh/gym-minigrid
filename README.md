@@ -1,4 +1,8 @@
 # Minimalistic Gridworld Environment (MiniGrid)
+"
+This is modified gym-minigrid environment which had some additional configured environments with different sizes, 
+reward functions, and max-timesteps. It was modified to perform experiments for master-thesis. 
+"
 
 [![Build Status](https://travis-ci.org/maximecb/gym-minigrid.svg?branch=master)](https://travis-ci.org/maximecb/gym-minigrid)
 
